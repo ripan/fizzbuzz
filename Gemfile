@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.2.3"
 
 gem 'rails', '4.2.4'
 
@@ -9,6 +10,9 @@ gem 'spring', :group => :development
 
 gem 'kaminari'
 
+gem 'rails_12factor', group: :production
+
+gem 'puma'
 
 
 # To use ActiveModel has_secure_password
