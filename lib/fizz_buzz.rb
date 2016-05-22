@@ -1,14 +1,14 @@
 class FizzBuzz
   attr_accessor :range
-  PAGE_SIZE = 10
+  LIMIT = 20 # 100000000000
 
   def initialize
+  	@range = []
     set_range
   end
 
   def set_range 
-    @range = []
-    (1..PAGE_SIZE).each do |i|
+    (1..LIMIT).each do |i|
       tmp = ''
       tmp += 'Fizz' if i%3==0
       tmp += 'Buzz' if i%5==0
