@@ -13,7 +13,7 @@ class FizzBuzz
       tmp = ''
       tmp += 'Fizz' if i%3==0
       tmp += 'Buzz' if i%5==0
-      tmp.empty? ? i : tmp
+      {index:i, name:tmp.empty? ? i : tmp, isFavourite:false}
     end
   end
 
