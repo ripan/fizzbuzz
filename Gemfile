@@ -17,6 +17,9 @@ gem 'puma'
 group :test, :development do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner', '1.5.1'
+  gem "json-schema"
 end
 
 # To use ActiveModel has_secure_password
