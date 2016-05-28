@@ -15,7 +15,7 @@ class FizzBuzz
     tmp = ''
     tmp += 'Fizz' if num%3==0
     tmp += 'Buzz' if num%5==0
-    {id:num, name:tmp.empty? ? num : tmp}
+    tmp.empty? ? num : tmp
   end
 
 end
