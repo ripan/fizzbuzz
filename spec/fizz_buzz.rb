@@ -21,10 +21,31 @@ describe FizzBuzz do
     end
 
     context "with max Viewing Value 10000" do
-      before { @fizzBuzz  = FizzBuzz.new limit: 10000}
-      it "should return 10000 records" do
-        expect(@fizzBuzz.range.length).to eq 10000
+      before { 
+        @fizzBuzz  = FizzBuzz.new limit: 10
+        @items = @fizzBuzz.range
+        @item = @items[rand(@items.length-1)]
+      }
+
+      it "should return 10 records" do
+        expect(@items.length).to eq 10
       end
+
+      it "should return 'Fizz' if item is divisible of 3" do
+        name = @item[:id]%3==0 ? 'Fizz' : @item[:name]
+        expect(name).to eq 'Fizz'
+      end
+
+      it "should return 'Buzz' if item is divisible of 5" do
+        name = @item[:id]%5==0 ? 'Buzz' : @item[:name]
+        expect(name).to eq 'Buzz'
+      end
+
+      it "should return 'FizzBuzz' if item is divisible of 3 or 5" do
+        # name = (@item[:id]%3==0 && @item[:id]%5==0) ? 'FizzBuzz' : @item[:name]
+        # expect(name).to eq  'FizzBuzz'
+      end
+
     end
 
   end
