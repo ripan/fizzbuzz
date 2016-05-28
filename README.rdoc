@@ -1,28 +1,21 @@
-== README
+Setup
+  - git clone https://github.com/ripan/fizzbuzz.git
+  - bundle
+  - rails s
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.4.5.1
+  - RUBY VERSION: 2.2.3 (2015-08-18 patchlevel 173) [x86_64-darwin14]
+  - Rails 4.2.4
+  
+Database:
+  - None
+  
+FizzBuzz API
+  - List First 100 items
+      curl https://fizzbuzz-app.herokuapp.com -v
+  - List 100 items from page 2 with page size 100
+      curl https://fizzbuzz-app.herokuapp.com/api/v1/fizzbuzz/list?maxViewingValue=1000&page=2&page_size=100 -v
+  - List 10 items from page 3 with page size 10
+      curl https://fizzbuzz-app.herokuapp.com/api/v1/fizzbuzz/list?maxViewingValue=1000&page=3&page_size=10 -v
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
