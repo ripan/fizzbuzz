@@ -3,15 +3,12 @@ class FizzBuzz
   LIMIT = 1000000 # 100000000000
 
   def initialize(options = {})
-    @range = []
     @limit = options[:limit] || LIMIT
-    set_range
+    @range = (1..@limit.to_i).to_a
   end
 
-  def set_range
-    @range = (1..@limit.to_i).map do |i|
-      display i
-    end
+  def format fizzbuzz_arr
+    fizzbuzz_arr.map{ |i| display i }
   end
 
   def display num
