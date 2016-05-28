@@ -2,12 +2,15 @@
 
 -Setup : Rails App
   - git clone https://github.com/ripan/fizzbuzz.git
+  - cd fizzbuzz
   - bundle
   - rails s
 
 -Setup : Nodejs/Angular App
   - git clone https://github.com/ripan/fizzbuzz-app.git
+  - cd fizzbuzz-app
   - npm install
+  - bower install
   - npm start
 
 RubyGems Environment:
