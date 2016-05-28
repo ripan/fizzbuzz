@@ -3,18 +3,22 @@ class FizzBuzz
   LIMIT = 1000000 # 100000000000
 
   def initialize(options = {})
-  	@range = []
+    @range = []
     @limit = options[:limit] || LIMIT
     set_range
   end
 
-  def set_range 
+  def set_range
     @range = (1..@limit.to_i).map do |i|
-      tmp = ''
-      tmp += 'Fizz' if i%3==0
-      tmp += 'Buzz' if i%5==0
-      {id:i, name:tmp.empty? ? i : tmp, isFavourite:false}
+      display i
     end
+  end
+
+  def display num
+    tmp = ''
+    tmp += 'Fizz' if num%3==0
+    tmp += 'Buzz' if num%5==0
+    {id:num, name:tmp.empty? ? num : tmp}
   end
 
 end
