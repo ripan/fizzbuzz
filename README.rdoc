@@ -1,14 +1,14 @@
-Setup
 
-	-Rails App
-  		- git clone https://github.com/ripan/fizzbuzz.git
-  		- bundle
-  		- rails s
 
-	-Nodejs/Angular App
-  		- git clone https://github.com/ripan/fizzbuzz-app.git
-  		- npm install
-  		- npm start
+-Setup : Rails App
+  - git clone https://github.com/ripan/fizzbuzz.git
+  - bundle
+  - rails s
+
+-Setup : Nodejs/Angular App
+  - git clone https://github.com/ripan/fizzbuzz-app.git
+  - npm install
+  - npm start
 
 RubyGems Environment:
   - RUBYGEMS VERSION: 2.4.5.1
